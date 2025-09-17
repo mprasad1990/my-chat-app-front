@@ -1,0 +1,69 @@
+/* Modal Background */
+.edit-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Box */
+.edit-modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.edit-modal h3 {
+  margin-top: 0;
+}
+
+.edit-modal textarea {
+  width: 100%;
+  padding: 6px;
+  resize: none;
+  margin-top: 10px;
+}
+
+.edit-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-save-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.edit-cancel-btn {
+  background: #ccc;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .edit-modal {
+    max-width: 95%;
+    padding: 15px 20px;
+  }
+
+  .edit-modal h3 {
+    font-size: 1rem;
+  }
+
+  .edit-modal p {
+    font-size: 0.85rem;
+  }
+}
